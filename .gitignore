@@ -1,0 +1,29 @@
+# Python / Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+venv/
+.venv/
+
+# Secrets / 機密
+.env
+.env.*
+!.env.example
+.secret.local
+*.key
+*.pem
+
+# Firebase / Firebase
+.firebase/
+firebase-debug.log
+*-debug.log
+functions-debug.log
+
+# Editors and OS / 編輯器與作業系統
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Verification output / 驗收輸出
+verification-*.json

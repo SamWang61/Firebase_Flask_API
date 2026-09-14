@@ -1,0 +1,1 @@
+{"functions":{"source":"functions","runtime":"python313"},"hosting":{"public":"public","ignore":["firebase.json","**/.*","**/node_modules/**"],"rewrites":[{"source":"/api/**","function":{"functionId":"api","region":"asia-east1"}}]}}
