@@ -25,6 +25,10 @@ Tool assistant:
 
 For every case, review tool name, arguments, source data, final answer, temperature slider, mobile layout, Share control, and footer link. A successful request is not enough: reject unsupported factual additions.
 
+## Project 3 regression and acceptance
+
+CI includes all three projects. For LangChain, run both `functions` tests and `test_isolation.py` from its project root. Follow [the test matrix](../langchain-tool-assistant/docs/TESTING.md): a clear GitHub + Wikipedia question must return both queries, rather than merely accepting that it may do so. [Evidence](../langchain-tool-assistant/docs/RESULTS.md) distinguishes historical user confirmation, offline tests and unverified live outcomes.
+
 ---
 
 # 測試與驗收
@@ -53,3 +57,7 @@ For every case, review tool name, arguments, source data, final answer, temperat
 7. 同時詢問 GitHub 與 Wikipedia，可能選擇兩個工具。
 
 每題需核對工具名稱、參數、來源資料、最終回答、Temperature 滑桿、手機版、Share 元件與頁尾連結。請勿只看請求成功；若回答加入來源沒有提供的事實，內容驗收仍應判定失敗。
+
+## 第三專案回歸與驗收
+
+CI 包含三個專案。LangChain 請在其根目錄執行 `functions` 測試與 `test_isolation.py`。[驗收矩陣](../langchain-tool-assistant/docs/TESTING.md)要求明確的 GitHub＋Wikipedia 問題必須涵蓋兩項查詢，不只接受「可能選兩項」。[證據紀錄](../langchain-tool-assistant/docs/RESULTS.md)區分歷史使用者確認、離線測試與尚未驗證的線上結果。

@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        project: [weather-advisor, ai-tool-assistant]
+        project: [weather-advisor, ai-tool-assistant, langchain-tool-assistant]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -17,3 +17,5 @@ jobs:
           python-version: "3.13"
       - run: python -m pip install -r ${{ matrix.project }}/functions/requirements-dev.txt
       - run: python -m pytest ${{ matrix.project }}/functions
+      - if: matrix.project == 'langchain-tool-assistant'
+        run: python -m pytest langchain-tool-assistant/test_isolation.py

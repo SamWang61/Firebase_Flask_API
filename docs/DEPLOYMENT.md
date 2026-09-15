@@ -30,6 +30,10 @@ After deployment, open both live URLs with a hard refresh and run the tests in [
 
 Use Firebase Console release history to roll Hosting back. Functions require deploying a known-good Git commit. Record the commit SHA used for every classroom submission.
 
+## Project 3 deployment scope
+
+The commands above manage the two original sites only. Do not add LangChain to their broad deployment loop. Follow [isolated deployment](../langchain-tool-assistant/docs/DEPLOYMENT.md) for a new Hosting site, Function and codebase, explicit project selection, optional LangSmith secret and resumable snapshot. The same Firebase project still shares quotas and billing.
+
 ---
 
 # Firebase 部署
@@ -63,3 +67,7 @@ firebase functions:secrets:set GROQ_API_KEY --project fakestoreapi-6c17e
 ## 回復版本
 
 Hosting 可使用 Firebase Console 的版本紀錄回復。Functions 應重新部署已知正常的 Git Commit；每次課程繳交都應記錄部署所用 Commit SHA。
+
+## 第三專案部署範圍
+
+上方指令只管理原有兩站，不要將 LangChain 加入原本全面部署迴圈。請依[隔離部署指南](../langchain-tool-assistant/docs/DEPLOYMENT.md)建立新 Hosting、Function 與 codebase，明確指定專案，設定選用 LangSmith Secret 並保留可續跑快照。同一 Firebase 專案仍共享帳務與額度。

@@ -27,3 +27,9 @@ Thumbs.db
 
 # Verification output / 驗收輸出
 verification-*.json
+
+# Local deployment state and evidence / 本機部署狀態與紀錄
+**/deployment-state.json
+**/DEPLOY-RESULT.json
+**/before-enable-langsmith/
+**/FakeStoreAPI_LangChain_Deploy_*/

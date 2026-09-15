@@ -29,6 +29,10 @@ Repeat for `ai-tool-assistant/functions`. Start emulators from the selected proj
 firebase emulators:start --only functions,hosting
 ```
 
+## LangChain development track
+
+Project 3 preserves the original source and adds an independent environment and launcher. Study [its development guide](../langchain-tool-assistant/docs/DEVELOPMENT.md) for the ChatGroq migration, multi-query schema, summary-prompt correction and LangSmith configuration. Start with [its quick start](../langchain-tool-assistant/README.md); it does not require modifying the original two projects.
+
 ---
 
 # 開發流程
@@ -61,3 +65,7 @@ python -m pytest
 ```powershell
 firebase emulators:start --only functions,hosting
 ```
+
+## LangChain 開發路線
+
+第三專案保留原始程式，另設獨立環境與啟動器。[開發指南](../langchain-tool-assistant/docs/DEVELOPMENT.md)說明 ChatGroq 改写、多查詢規格、摘要提示修正與 LangSmith 設定。請從[快速開始](../langchain-tool-assistant/README.md)進入，不必修改原有兩套程式。
